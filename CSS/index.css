@@ -1,0 +1,196 @@
+body{
+    background-color: lightgray;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.container{
+    background-color: white;
+    border-radius: 10px;
+    display: grid ;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-template-rows: auto;
+    grid-template-areas:"header header header header"
+                        "sidebar1 main main sidebar2"
+                        "footer footer footer footer";}
+
+.container .header{grid-area: header;}
+.container .sidebar1{grid-area: sidebar1;}
+.container .main{grid-area: main}
+.container .sidebar2{grid-area: sidebar2; }
+.container .footer{grid-area: footer; }
+
+.containerheader{ 
+    /* border: rgb(252, 236, 97) solid 1px;     */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    }
+
+#linea{
+    width: 28px;
+    height: 2px;
+    background-color: black;
+}
+h3, h1{font-family:  'Oswald', sans-serif;}
+h1{font-size: 100px; margin: 2px;}
+h5{word-spacing: 5px; letter-spacing: 5px;}
+h4{margin: 0px;}
+p{padding-right: 20px;
+    font-size: 15px;
+}
+aside >div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+footer >div{
+    height: 50px;
+}
+/*ASIDE*/
+.containeraside2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 80vh;  
+}
+.containeraside, .boxaside1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.boxaside2{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: black;
+    box-sizing: border-box;
+    height: 15vw;
+    width: 80px;
+    padding-left: 2px;
+}
+.boxaside2 img{
+    border-right: white solid 1px;
+}
+.containeraside >div{
+    margin: 20px 0px;
+    width: 120px;}
+.boxaside1 >div{
+    margin: 7px 0px;
+}
+.boxaside1{
+    padding-left: 10px;
+}
+.cambio{
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 5px;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+}
+
+#portada{
+    position: absolute;
+    z-index: 20;
+    transform: translate(700px, -120px);
+}
+#home2{
+    display: none;
+}
+.maincontainer{
+    height: fit-content;
+    width: 600px;
+    font-size: 15px;
+    margin-left: 23px
+}
+.conttitulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    width: 45vw;
+    margin-left: 10px
+}
+.conttitulo >div{
+    margin: 0px 7px;
+}
+.conttitulo .linea{
+    height: 1.2vh;
+    background-color: black;
+    width: 13vw;
+}
+
+.containerboth{     
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    height: 50px;
+    }
+
+/*PSEUDOCLASES*/
+a:link{text-decoration: none;  color: black;}
+a:visited{color: black}
+a:hover{color: rgb(226, 189, 147); 
+transition-duration: 0.5s;
+}
+
+/* QUIENES */
+.quienescontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    
+}
+.quienescontainer div{
+    height: 500px;
+}
+#foto{
+    box-sizing: border-box;
+    padding-top: 25px;
+    width: 45%;
+}
+#texto{
+    width: 55%;
+}
+
+/* PROYECTOS */
+.containerproy{
+    overflow:scroll;
+    height: 500px;
+    width: 98%;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 24%;
+    max-width: 24%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
