@@ -38,3 +38,13 @@ function despues(numero) {
           contacto.innerHTML = "004";
         }
 }
+
+(function($){
+    $(window).on("load",function(){
+        $(".mCustomScrollbar").mCustomScrollbar();
+    });
+})(jQuery);
+
+$(".content").mCustomScrollbar({
+    theme:"dark"
+});

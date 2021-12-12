@@ -33,12 +33,18 @@ body{
     height: 2px;
     background-color: black;
 }
+h2{font-size: 50px;}
 h3, h1{font-family:  'Oswald', sans-serif;}
 h1{font-size: 100px; margin: 2px;}
 h5{word-spacing: 5px; letter-spacing: 5px;}
 h4{margin: 0px;}
 p{padding-right: 20px;
     font-size: 15px;
+}
+.boxproy{
+    border-top: black solid 1px;
+    margin-bottom: 50px;
+    
 }
 aside >div{
     display: flex;
@@ -163,8 +169,8 @@ transition-duration: 0.5s;
 }
 
 /* PROYECTOS */
-.containerproy{
-    overflow:scroll;
+.mCustomScrollbar{
+    overflow: auto;
     height: 500px;
     width: 98%;
 }
@@ -194,3 +200,5 @@ transition-duration: 0.5s;
       max-width: 50%;
     }
   }
+
+
