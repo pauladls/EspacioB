@@ -1,5 +1,5 @@
 /*HEADER*/
-document.querySelector(".containerheader").innerHTML= `
+document.querySelector(".header").innerHTML= `
 <h5>ARQUITECTURA & DISEÑO</h5>
 `
 /*ASIDE1*/
@@ -38,7 +38,7 @@ document.querySelector(".containeraside2").innerHTML=`
 <div><a id="icono" href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a></div>
 <div><a id="icono" href="https://www.instagram.com/espaciob.arq/?hl=es"><i
     class="fab fa-instagram-square"></i></a></div>
-<div><a href="mailto:spaciob.arq@gmail.com"><i class="fas fa-envelope"></i></a></div>
+<div><a href="mailto:espaciob.arq@gmail.com"><i class="fas fa-envelope"></i></a></div>
 </div>
 <div class="boxaside2">
 <div>
