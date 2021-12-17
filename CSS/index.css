@@ -29,10 +29,6 @@ body{
     justify-content: center;
     align-items: center;
     height: 45px;
-    border: aqua solid 1px;
-}
-.footer >div{
-    border: rgb(55, 0, 255) solid 1px;
 }
 
 /*MAIN*/
@@ -41,8 +37,6 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border: aqua solid 1px;
-    height: 510px
 }
 
 .box1{
@@ -51,7 +45,7 @@ body{
     width: 65%;
 }
 .box2 img{
-    height: 70vh;
+    height: 75vh;
 }
 .subbox{
     height: fit-content;
@@ -64,7 +58,6 @@ body{
     justify-content: left;
     align-items: center;
     width: 45vw;
-    margin-left: 10px
 }
 .conttitulo >div{
     margin: 0px 7px;
@@ -74,7 +67,6 @@ body{
     background-color: black;
     width: 13vw;
 }
-
 
 /*ASIDE*/
 .menu{
@@ -86,33 +78,35 @@ align-items: center;
 
 .containeraside2{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    flex-direction: row;
     align-items: center;
-    /* height: 80vh;   */
+    width: 133px;
 }
+.boxaside1{
+    width: 50%;
+    padding-left: 5px;
+}
+.boxaside1 div{
+    padding: 7px 0px;
+    }
 .boxaside2{
+    /* border-radius: 10px 0px 0px 10px; */
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: black;
     box-sizing: border-box;
-    /* height: 13vw; */
-    width: 4.3em;
-    padding-left: 2px;
+    width: 50%;
+    padding: 10px 0px;
 }
-
-.boxaside1 div{
-    padding: 7px 0px;
-}
-
 .boxaside2 div{
     background-color: black;
     font-family:  'Oswald', sans-serif;
     color: white;
     font-size: 30px;
-    line-height: 1em;
-}
+    line-height: 1em;}
+
 .contlogo{
     display: flex;
     flex-direction: row;
@@ -124,7 +118,6 @@ align-items: center;
     height: 2px;
     width: 10px;
 }
-
 .containeraside1 >div{margin: 20px 0px;
     width: 120px;}
 
@@ -134,14 +127,12 @@ Distintos tamaños relativos al viewport, no se utilizan todos en el ejemplo,
 sino que se utilizan aquellos que sean funcionales a este proyecto*/
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
-.col-3 {width: 10%;  border: rgb(255, 136, 0) solid 1px;
-     /* height: 80vh; */
-}
+.col-3 {width: 10%; 
+    display: flex;
+align-items: center;}
 .col-4 {width: 33.33%;}
 .col-5 {width: 41.66%;}
-.col-6 {width: 80%;
-     /* height: 80vh; */
-    }
+.col-6 {width: 80%; height: 518px;}
 .col-7 {width: 58.33%;}
 .col-8 {width: 66.66%;}
 .col-9 {width: 75%;}
@@ -156,8 +147,58 @@ a:hover{color: rgb(226, 189, 147);
 transition-duration: 0.5s;
 }
 
+.cambio{
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 5px;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+}
 h3, h1{font-family:  'Oswald', sans-serif;}
 h1{font-size: 100px; margin: 2px;}
+h4{margin: 0%; }
+
+/*PROYECTOS*/
+.mainproy{
+    height: 520px;
+    overflow-y: scroll;
+}
+.boxproy{
+    border-top: black solid 1px;
+    margin-bottom: 50px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 24%;
+    max-width: 24%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+/* QUIENES */
+.quienescontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 510px;    
+}
+.quienescontainer p{padding-right: 10px;  font-size: 15px;}
+#foto{box-sizing: border-box;}
+#texto{height: 510px; width: 60%;} 
+
 
 @media only screen and (max-width: 768px) {
     /* For mobile phones: 
@@ -167,24 +208,28 @@ h1{font-size: 100px; margin: 2px;}
     [class*="col-"] {
         width: 100%;
     }
+.classall{
+    border-radius: 0px;}
 .header{
     position: fixed;
-    width: 97%;
-    transform: translateY(-8px);
+    justify-content: center;
+    width: 94%;
     background-color: white;
 }
+/*ASIDE*/
 .menu{
     background-color: white;
     transform: translateY(35px);
     position: fixed;
     border-bottom: rgb(196, 196, 196) 2px solid;
-    width: 97%;
+    width: 93%;
 }
 .containeraside2{
-    flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    height: 40vh;  
+    height: 40vh; 
+    width: 90vw;
+    flex-direction: row;
         }
 .containeraside1{
     font-size: 13px;
@@ -212,18 +257,20 @@ text-align: center;}
 
 
 /*MAIN*/
+.col-6 {height: auto;}
 .containermain{
     flex-direction: column;  
     padding-top: 100px;
-height:fit-content;}
+    height:fit-content;
+    width: 100%;}
 
 .box1{
     width: 100%;
     margin: 0px;
 }
 h1{font-size: 80px;}
-.box2 img{height: 60vh;}
-.conttitulo{width: 100%;}
+.box2 img{height: 90vw;}
+.conttitulo{width: 100%; margin: 0px;}
 
 .conttitulo .linea{
     height: 1vh;
@@ -236,224 +283,29 @@ h1{font-size: 80px;}
     text-align: center;
 }
 
-
+/*PROYECTOS*/
+.mainproy{
+    margin-top: 100px;
 }
-
-
-
-
-
-
-/* body{
-    background-color: lightgray;
-    font-family: 'Quicksand', sans-serif;
-}
-
-.container{
-    background-color: white;
-    border-radius: 10px;
-    display: grid ;
-    grid-template-columns: 10% 40% 40% 10%;
-    grid-template-rows: auto;
-    grid-template-areas:"header header header header"
-                        "aside1 main main aside2"
-                        "footer footer footer footer";}
-
-.container .header{grid-area: header;}
-.container .aside1{grid-area: aside1;}
-.container .main{grid-area: main; border: coral solid 1px;}
-.container .aside2{grid-area: aside2; }
-.container .footer{grid-area: footer; }
-
-.containerheader{ 
-    /* border: rgb(252, 236, 97) solid 1px;     */
-    /* display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 45px;
-    }
-
-h2{font-size: 50px;}
-h3, h1{font-family:  'Oswald', sans-serif;}
-h1{font-size: 100px; margin: 2px;}
-h5{word-spacing: 5px; letter-spacing: 5px;}
-h4{margin: 0px;}
-p{padding-right: 20px;
-    font-size: 15px;
-}
-.boxproy{
-    border-top: black solid 1px;
-    margin-bottom: 50px;
-    
-}
-aside >div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    }
-footer >div{
-    height: 50px; }*/
-
-/*ASIDE*/
-/* .containeraside2{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 80vh;  
-}
-.containeraside1, .boxaside1{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-}
-
-.boxaside2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    box-sizing: border-box;
-    height: 13vw;
-    width: 4.3em;
-    padding-left: 2px;
-}
-.boxaside2 div{
-    font-family:  'Oswald', sans-serif;
-    color: white;
-    font-size: 30px;
-    line-height: 1em;
-}
-.contlogo{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-#lineafina{
-    background-color: white;
-    height: 2px;
-    width: 10px;
-}
-.boxaside2 img{
-    border-left: white solid 1px;
-}
-
-
-.boxaside1{
-    padding-left: 10px;
-}
-.cambio{
-    font-weight: bold;
-    font-size: 15px;
-    margin-left: 5px;
-    transition-duration: 1s;
-    transition-timing-function: ease-out;
-}
-
-#portada{
-    position: absolute;
-    z-index: 20;
-    transform: translate(700px, -120px);
-}
-#home2{
-    display: none;
-} */
-/* MAIN */
-/* .textomain{
-    border: solid black 1px;
-    height: fit-content;
-    width: 600px;
-    font-size: 15px;
-    margin-left: 23px
-}
-
-#linea{
-    width: 28px;
-    height: 2px;
-    background-color: black;
-}
-.conttitulo{
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-items: center;
-    width: 45vw;
-    margin-left: 10px
-}
-.conttitulo >div{
-    margin: 0px 7px;
-}
-.conttitulo .linea{
-    height: 1.2vh;
-    background-color: black;
-    width: 13vw;
-}
-
-.containerfooter{     
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: baseline;
-    height: 50px;
-    } */
-
-/*PSEUDOCLASES*/
-a:link{text-decoration: none;  color: black;}
-a:visited{color: black}
-a:hover{color: rgb(226, 189, 147); 
-transition-duration: 0.5s;
-}
-
 /* QUIENES */
 .quienescontainer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    
+    padding-top: 100px;
+    flex-direction: column;
+    height: auto;  
 }
-.quienescontainer div{
-    height: 500px;
-}
-#foto{
-    box-sizing: border-box;
-    padding-top: 25px;
-    width: 45%;
-}
-#texto{
-    width: 55%;
+.quienescontainer p{padding-right: 0px;}
+#texto{height: auto;width: 100%;}
+#foto{display: flex;
+    box-sizing: border-box;width: 100%;
+justify-content: center;}
+
+
+
+
 }
 
-/* PROYECTOS */
-.mCustomScrollbar{
-    overflow: auto;
-    height: 500px;
-    width: 98%;
-}
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-  }
-  
-  /* Create four equal columns that sits next to each other */
-  .column {
-    flex: 24%;
-    max-width: 24%;
-    padding: 0 4px;
-  }
-  
-  .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
-  }
+
+
   
   /* Responsive layout - makes a two column-layout instead of four columns */
   @media screen and (max-width: 800px) {

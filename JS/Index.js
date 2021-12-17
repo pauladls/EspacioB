@@ -42,9 +42,12 @@ document.querySelector(".containeraside2").innerHTML=`
 </div>
 <div class="boxaside2">
 <div>
-    ES <br>PA <br> CIO <br> 
-    <div class="contlogo" >
-    <div id="lineafina"></div> <div>B.</div> 
+    ES <br>
+    PA <br> 
+    CIO <br> 
+    <div class="contlogo">
+    <div id="lineafina"></div>
+     <div>B.</div> 
 </div>
 </div>
 </div>
