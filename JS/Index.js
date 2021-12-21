@@ -8,7 +8,7 @@ document.querySelector(".containeraside1").innerHTML=`
 <div>                        
 <div>
     <i class="fas fa-angle-double-right"></i>
-     <a class="cambio" id="home" onmouseover="antes(home)" onmouseout="despues(home)"  href="index.html">001</a>
+     <a class="cambio" id="home" onmouseover="antes(home)" onmouseout="despues(home)" href="index.html">001</a>
 </div>
 </div>
 <div>                        
@@ -55,9 +55,10 @@ document.querySelector(".containeraside2").innerHTML=`
 /*FOOTER*/
 document.querySelector(".containerfooter").innerHTML=`
 <div>
-<h5>   <i class="fas fa-map-marker-alt"></i> Rosario, Santa Fe, Argentina
-   | derechos reservados @ 2020
-</div>
+   <i class="fas fa-map-marker-alt"></i> Rosario, Santa Fe, Argentina | </div>
+<div> derechos reservados @ 2020</div>
+                
+  
 `
 
 
@@ -105,5 +106,9 @@ function despues(numero) {
         }
 }
 
+
+// function myFunction(proyectos) {
+// object.addEventListener("touchstart", myFunction(proyectos));
+// }
 
 
